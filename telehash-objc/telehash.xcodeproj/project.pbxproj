@@ -1,0 +1,1245 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		820BADF318D77EFA003D7CBA /* THPeerRelay.h in Headers */ = {isa = PBXBuildFile; fileRef = 820BADF118D77EFA003D7CBA /* THPeerRelay.h */; };
+		820BADF418D77EFA003D7CBA /* THPeerRelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BADF218D77EFA003D7CBA /* THPeerRelay.m */; };
+		820BADF518D77EFA003D7CBA /* THPeerRelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BADF218D77EFA003D7CBA /* THPeerRelay.m */; };
+		820BADFC18D81476003D7CBA /* THPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 820BADFA18D81476003D7CBA /* THPath.h */; };
+		820BADFD18D81476003D7CBA /* THPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BADFB18D81476003D7CBA /* THPath.m */; };
+		820BADFE18D81476003D7CBA /* THPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BADFB18D81476003D7CBA /* THPath.m */; };
+		821874161836957400256DA3 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 821874151836957400256DA3 /* libc++.dylib */; };
+		8218D17117FA6E8A0053AFAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D17017FA6E8A0053AFAC /* Cocoa.framework */; };
+		8218D17B17FA6E8A0053AFAC /* telehash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8218D17A17FA6E8A0053AFAC /* telehash.m */; };
+		8218D18217FA6E8B0053AFAC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D18117FA6E8B0053AFAC /* XCTest.framework */; };
+		8218D18317FA6E8B0053AFAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D17017FA6E8A0053AFAC /* Cocoa.framework */; };
+		8218D18617FA6E8B0053AFAC /* libtelehash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D16D17FA6E8A0053AFAC /* libtelehash.a */; };
+		8218D18C17FA6E8B0053AFAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8218D18A17FA6E8B0053AFAC /* InfoPlist.strings */; };
+		8218D18E17FA6E8B0053AFAC /* telehashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8218D18D17FA6E8B0053AFAC /* telehashTests.m */; };
+		8218D19D17FA6EA50053AFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D19C17FA6EA50053AFAC /* Foundation.framework */; };
+		8218D1A217FA6EA50053AFAC /* telehash_ios.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 8218D1A117FA6EA50053AFAC /* telehash_ios.h */; };
+		8218D1A417FA6EA50053AFAC /* telehash_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 8218D1A317FA6EA50053AFAC /* telehash_ios.m */; };
+		8218D1AA17FA6EA60053AFAC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D18117FA6E8B0053AFAC /* XCTest.framework */; };
+		8218D1AB17FA6EA60053AFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D19C17FA6EA50053AFAC /* Foundation.framework */; };
+		8218D1AD17FA6EA60053AFAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D1AC17FA6EA60053AFAC /* UIKit.framework */; };
+		8218D1B017FA6EA60053AFAC /* libtelehash-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8218D19B17FA6EA50053AFAC /* libtelehash-ios.a */; };
+		8218D1B617FA6EA60053AFAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8218D1B417FA6EA60053AFAC /* InfoPlist.strings */; };
+		8218D1B817FA6EA60053AFAC /* telehash_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8218D1B717FA6EA60053AFAC /* telehash_iosTests.m */; };
+		8218D1C217FA6F410053AFAC /* THRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 8218D1C017FA6F410053AFAC /* THRSA.h */; };
+		8218D1C317FA6F410053AFAC /* RSA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8218D1C117FA6F410053AFAC /* RSA.mm */; };
+		8218D1C417FA6F410053AFAC /* RSA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8218D1C117FA6F410053AFAC /* RSA.mm */; };
+		822C6D2F17FCCD0C008C04BA /* ECDH.h in Headers */ = {isa = PBXBuildFile; fileRef = 822C6D2D17FCCD0C008C04BA /* ECDH.h */; };
+		822C6D3017FCCD0C008C04BA /* ECDH.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D2E17FCCD0C008C04BA /* ECDH.mm */; };
+		822C6D3117FCCD0C008C04BA /* ECDH.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D2E17FCCD0C008C04BA /* ECDH.mm */; };
+		822C6D3417FCD3F6008C04BA /* CTRAES256.h in Headers */ = {isa = PBXBuildFile; fileRef = 822C6D3217FCD3F6008C04BA /* CTRAES256.h */; };
+		822C6D3517FCD3F6008C04BA /* CTRAES256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3317FCD3F6008C04BA /* CTRAES256.mm */; };
+		822C6D3617FCD3F6008C04BA /* CTRAES256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3317FCD3F6008C04BA /* CTRAES256.mm */; };
+		822C6D3917FCD754008C04BA /* SHA256.h in Headers */ = {isa = PBXBuildFile; fileRef = 822C6D3717FCD754008C04BA /* SHA256.h */; };
+		822C6D3A17FCD754008C04BA /* SHA256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3817FCD754008C04BA /* SHA256.mm */; };
+		822C6D3B17FCD754008C04BA /* SHA256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3817FCD754008C04BA /* SHA256.mm */; };
+		822C6D3E17FCD8C5008C04BA /* RNG.h in Headers */ = {isa = PBXBuildFile; fileRef = 822C6D3C17FCD8C5008C04BA /* RNG.h */; };
+		822C6D3F17FCD8C5008C04BA /* RNG.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3D17FCD8C5008C04BA /* RNG.mm */; };
+		822C6D4017FCD8C5008C04BA /* RNG.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D3D17FCD8C5008C04BA /* RNG.mm */; };
+		822C6D4417FCDB31008C04BA /* THPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 822C6D4217FCDB31008C04BA /* THPacket.h */; };
+		822C6D4517FCDB31008C04BA /* THPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D4317FCDB31008C04BA /* THPacket.m */; };
+		822C6D4617FCDB31008C04BA /* THPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C6D4317FCDB31008C04BA /* THPacket.m */; };
+		8231EBC51836BD3600BC41C1 /* NSString+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8231EBC31836BD3600BC41C1 /* NSString+HexString.h */; };
+		8231EBC61836BD3600BC41C1 /* NSString+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231EBC41836BD3600BC41C1 /* NSString+HexString.m */; };
+		8231EBC71836BD3600BC41C1 /* NSString+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231EBC41836BD3600BC41C1 /* NSString+HexString.m */; };
+		8231EC1B1836F37F00BC41C1 /* THLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8231EC191836F37F00BC41C1 /* THLine.h */; };
+		8231EC1C1836F37F00BC41C1 /* THLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231EC1A1836F37F00BC41C1 /* THLine.m */; };
+		8231EC1D1836F37F00BC41C1 /* THLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231EC1A1836F37F00BC41C1 /* THLine.m */; };
+		8236E1A718F5EDB600169201 /* THTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8236E1A518F5EDB600169201 /* THTransport.h */; };
+		8236E1A818F5EDB600169201 /* THTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8236E1A618F5EDB600169201 /* THTransport.m */; };
+		8236E1A918F5EDB600169201 /* THTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8236E1A618F5EDB600169201 /* THTransport.m */; };
+		8249D63F1905F6640009F03B /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8249D63E1905F6640009F03B /* libsodium.a */; };
+		8249D6411905F6730009F03B /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8249D6401905F6730009F03B /* libsodium.a */; };
+		8249D6441906100C0009F03B /* THCipherSet3a.h in Headers */ = {isa = PBXBuildFile; fileRef = 8249D6421906100C0009F03B /* THCipherSet3a.h */; };
+		8249D6451906100C0009F03B /* THCipherSet3a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249D6431906100C0009F03B /* THCipherSet3a.m */; };
+		8249D6461906100C0009F03B /* THCipherSet3a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249D6431906100C0009F03B /* THCipherSet3a.m */; };
+		8249D649190627300009F03B /* THCipherSet2a.h in Headers */ = {isa = PBXBuildFile; fileRef = 8249D647190627300009F03B /* THCipherSet2a.h */; };
+		8249D64A190627300009F03B /* THCipherSet2a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249D648190627300009F03B /* THCipherSet2a.m */; };
+		8249D64B190627300009F03B /* THCipherSet2a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249D648190627300009F03B /* THCipherSet2a.m */; };
+		824F74B3191061D300B4E807 /* CLCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 824F74B1191061D300B4E807 /* CLCLog.h */; };
+		824F74B4191061D300B4E807 /* CLCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 824F74B2191061D300B4E807 /* CLCLog.m */; };
+		824F74B5191061D300B4E807 /* CLCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 824F74B2191061D300B4E807 /* CLCLog.m */; };
+		8251ADB418C02349005CB9E2 /* libcryptopp-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8263D95B18BD16F000DED8E5 /* libcryptopp-osx.a */; };
+		8251ADBA18C023DC005CB9E2 /* open.pkt in Resources */ = {isa = PBXBuildFile; fileRef = 8251ADB918C023DC005CB9E2 /* open.pkt */; };
+		8251ADBD18C05A26005CB9E2 /* THCipherSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8251ADBB18C05A26005CB9E2 /* THCipherSet.h */; };
+		8251ADBE18C05A26005CB9E2 /* THCipherSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8251ADBC18C05A26005CB9E2 /* THCipherSet.m */; };
+		8251ADBF18C05A26005CB9E2 /* THCipherSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8251ADBC18C05A26005CB9E2 /* THCipherSet.m */; };
+		827CB8AB190C887F001EB8F9 /* THUnreliableChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 827CB8A9190C887F001EB8F9 /* THUnreliableChannel.h */; };
+		827CB8AC190C8880001EB8F9 /* THUnreliableChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 827CB8AA190C887F001EB8F9 /* THUnreliableChannel.m */; };
+		827CB8AD190C8880001EB8F9 /* THUnreliableChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 827CB8AA190C887F001EB8F9 /* THUnreliableChannel.m */; };
+		827CB8B4190C8890001EB8F9 /* THReliableChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 827CB8B2190C8890001EB8F9 /* THReliableChannel.h */; };
+		827CB8B5190C8890001EB8F9 /* THReliableChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 827CB8B3190C8890001EB8F9 /* THReliableChannel.m */; };
+		827CB8B6190C8890001EB8F9 /* THReliableChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 827CB8B3190C8890001EB8F9 /* THReliableChannel.m */; };
+		8298FF4918C5B5B0009CD379 /* GCMAES256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8298FF4718C5B5B0009CD379 /* GCMAES256.mm */; };
+		8298FF4A18C5B5B0009CD379 /* GCMAES256.h in Headers */ = {isa = PBXBuildFile; fileRef = 8298FF4818C5B5B0009CD379 /* GCMAES256.h */; };
+		8298FF4F18C5B5B4009CD379 /* GCMAES256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8298FF4718C5B5B0009CD379 /* GCMAES256.mm */; };
+		8298FF5E18C83ECB009CD379 /* server.der in Resources */ = {isa = PBXBuildFile; fileRef = 8298FF5C18C83ECB009CD379 /* server.der */; };
+		8298FF5F18C83ECC009CD379 /* server.pder in Resources */ = {isa = PBXBuildFile; fileRef = 8298FF5D18C83ECB009CD379 /* server.pder */; };
+		82A31BA3183457EB005077AD /* NSData+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A31BA1183457EB005077AD /* NSData+HexString.h */; };
+		82A31BA4183457EB005077AD /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A31BA2183457EB005077AD /* NSData+HexString.m */; };
+		82A31BA5183457EB005077AD /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A31BA2183457EB005077AD /* NSData+HexString.m */; };
+		82B1720317FDE18F00C29EAF /* test.pkt in Resources */ = {isa = PBXBuildFile; fileRef = 82B1720217FDE18F00C29EAF /* test.pkt */; };
+		82B1720617FDE90600C29EAF /* THSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B1720417FDE90600C29EAF /* THSwitch.h */; };
+		82B1720717FDE90600C29EAF /* THSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720517FDE90600C29EAF /* THSwitch.m */; };
+		82B1720817FDE90600C29EAF /* THSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720517FDE90600C29EAF /* THSwitch.m */; };
+		82B1720B180095B100C29EAF /* THChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B17209180095B100C29EAF /* THChannel.h */; };
+		82B1720C180095B100C29EAF /* THChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720A180095B100C29EAF /* THChannel.m */; };
+		82B1720D180095B100C29EAF /* THChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720A180095B100C29EAF /* THChannel.m */; };
+		82B1721018009A6C00C29EAF /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B1720E18009A6C00C29EAF /* GCDAsyncUdpSocket.h */; };
+		82B1721118009A6C00C29EAF /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720F18009A6C00C29EAF /* GCDAsyncUdpSocket.m */; };
+		82B1721218009A6C00C29EAF /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B1720F18009A6C00C29EAF /* GCDAsyncUdpSocket.m */; };
+		82B172151800A51B00C29EAF /* THIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B172131800A51B00C29EAF /* THIdentity.h */; };
+		82B172161800A51B00C29EAF /* THIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B172141800A51B00C29EAF /* THIdentity.m */; };
+		82B172171800A51B00C29EAF /* THIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B172141800A51B00C29EAF /* THIdentity.m */; };
+		82B70ACE18404D4900E819F3 /* THPacketBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B70ACC18404D4900E819F3 /* THPacketBuffer.h */; };
+		82B70ACF18404D4900E819F3 /* THPacketBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B70ACD18404D4900E819F3 /* THPacketBuffer.m */; };
+		82B70AD018404D4900E819F3 /* THPacketBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B70ACD18404D4900E819F3 /* THPacketBuffer.m */; };
+		82DB236B187C8343002C74C9 /* THMeshBuckets.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DB2369187C8343002C74C9 /* THMeshBuckets.h */; };
+		82DB236C187C8343002C74C9 /* THMeshBuckets.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB236A187C8343002C74C9 /* THMeshBuckets.m */; };
+		82DB236D187C8343002C74C9 /* THMeshBuckets.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB236A187C8343002C74C9 /* THMeshBuckets.m */; };
+		82DB2375187C83E4002C74C9 /* THPendingJob.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DB2373187C83E4002C74C9 /* THPendingJob.h */; };
+		82DB2376187C83E4002C74C9 /* THPendingJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB2374187C83E4002C74C9 /* THPendingJob.m */; };
+		82DB2377187C83E4002C74C9 /* THPendingJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DB2374187C83E4002C74C9 /* THPendingJob.m */; };
+		82EF37311927AF3D001D3DB4 /* THRelay.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EF372F1927AF3D001D3DB4 /* THRelay.h */; };
+		82EF37321927AF3D001D3DB4 /* THRelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF37301927AF3D001D3DB4 /* THRelay.m */; };
+		82EF37331927AF3D001D3DB4 /* THRelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EF37301927AF3D001D3DB4 /* THRelay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8207A0BF18562A5F009EF845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8207A0B818562A5E009EF845 /* thFieldTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8207A07A18562A5E009EF845;
+			remoteInfo = thFieldTest;
+		};
+		8207A0C118562A5F009EF845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8207A0B818562A5E009EF845 /* thFieldTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8207A0A118562A5E009EF845;
+			remoteInfo = thFieldTestTests;
+		};
+		8218D18417FA6E8B0053AFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8218D16517FA6E8A0053AFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8218D16C17FA6E8A0053AFAC;
+			remoteInfo = telehash;
+		};
+		8218D1AE17FA6EA60053AFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8218D16517FA6E8A0053AFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8218D19A17FA6EA50053AFAC;
+			remoteInfo = "telehash-ios";
+		};
+		8231EC0D1836C60E00BC41C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8231EC081836C60D00BC41C1 /* Telehash Playground.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8231EBD11836C60D00BC41C1;
+			remoteInfo = "Telehash Playground";
+		};
+		8231EC0F1836C60E00BC41C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8231EC081836C60D00BC41C1 /* Telehash Playground.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8231EBF21836C60D00BC41C1;
+			remoteInfo = "Telehash PlaygroundTests";
+		};
+		8263D95A18BD16F000DED8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D221361871D3630015E7EA /* cryptopp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8263D95418BD0FD700DED8E5;
+			remoteInfo = "cryptopp-osx";
+		};
+		8263D96418BD274C00DED8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D221361871D3630015E7EA /* cryptopp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8263D99418BD298500DED8E5;
+			remoteInfo = "cryptopp-osx";
+		};
+		8263D96618BD275000DED8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D221361871D3630015E7EA /* cryptopp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 82D2210C1871D3620015E7EA;
+			remoteInfo = "cryptopp-ios";
+		};
+		82D2213B1871D3630015E7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82D221361871D3630015E7EA /* cryptopp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82D2210D1871D3620015E7EA;
+			remoteInfo = cryptopp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8218D19917FA6EA50053AFAC /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8218D1A217FA6EA50053AFAC /* telehash_ios.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8207A0B818562A5E009EF845 /* thFieldTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = thFieldTest.xcodeproj; path = thFieldTest/thFieldTest.xcodeproj; sourceTree = "<group>"; };
+		820BADF118D77EFA003D7CBA /* THPeerRelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPeerRelay.h; sourceTree = "<group>"; };
+		820BADF218D77EFA003D7CBA /* THPeerRelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPeerRelay.m; sourceTree = "<group>"; };
+		820BADFA18D81476003D7CBA /* THPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPath.h; sourceTree = "<group>"; };
+		820BADFB18D81476003D7CBA /* THPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPath.m; sourceTree = "<group>"; };
+		821874151836957400256DA3 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		8218D16D17FA6E8A0053AFAC /* libtelehash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtelehash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8218D17017FA6E8A0053AFAC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8218D17317FA6E8A0053AFAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8218D17417FA6E8A0053AFAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8218D17517FA6E8A0053AFAC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8218D17817FA6E8A0053AFAC /* telehash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "telehash-Prefix.pch"; sourceTree = "<group>"; };
+		8218D17917FA6E8A0053AFAC /* telehash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = telehash.h; sourceTree = "<group>"; };
+		8218D17A17FA6E8A0053AFAC /* telehash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = telehash.m; sourceTree = "<group>"; };
+		8218D18017FA6E8B0053AFAC /* telehashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telehashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8218D18117FA6E8B0053AFAC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8218D18917FA6E8B0053AFAC /* telehashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "telehashTests-Info.plist"; sourceTree = "<group>"; };
+		8218D18B17FA6E8B0053AFAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8218D18D17FA6E8B0053AFAC /* telehashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = telehashTests.m; sourceTree = "<group>"; };
+		8218D19B17FA6EA50053AFAC /* libtelehash-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtelehash-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8218D19C17FA6EA50053AFAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8218D1A017FA6EA50053AFAC /* telehash-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "telehash-ios-Prefix.pch"; sourceTree = "<group>"; };
+		8218D1A117FA6EA50053AFAC /* telehash_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = telehash_ios.h; sourceTree = "<group>"; };
+		8218D1A317FA6EA50053AFAC /* telehash_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = telehash_ios.m; sourceTree = "<group>"; };
+		8218D1A917FA6EA60053AFAC /* telehash-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "telehash-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8218D1AC17FA6EA60053AFAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8218D1B317FA6EA60053AFAC /* telehash-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "telehash-iosTests-Info.plist"; sourceTree = "<group>"; };
+		8218D1B517FA6EA60053AFAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8218D1B717FA6EA60053AFAC /* telehash_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = telehash_iosTests.m; sourceTree = "<group>"; };
+		8218D1C017FA6F410053AFAC /* THRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRSA.h; sourceTree = "<group>"; };
+		8218D1C117FA6F410053AFAC /* RSA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RSA.mm; sourceTree = "<group>"; };
+		822C6D2D17FCCD0C008C04BA /* ECDH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDH.h; sourceTree = "<group>"; };
+		822C6D2E17FCCD0C008C04BA /* ECDH.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ECDH.mm; sourceTree = "<group>"; };
+		822C6D3217FCD3F6008C04BA /* CTRAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRAES256.h; sourceTree = "<group>"; };
+		822C6D3317FCD3F6008C04BA /* CTRAES256.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CTRAES256.mm; sourceTree = "<group>"; };
+		822C6D3717FCD754008C04BA /* SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA256.h; sourceTree = "<group>"; };
+		822C6D3817FCD754008C04BA /* SHA256.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SHA256.mm; sourceTree = "<group>"; };
+		822C6D3C17FCD8C5008C04BA /* RNG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNG.h; sourceTree = "<group>"; };
+		822C6D3D17FCD8C5008C04BA /* RNG.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RNG.mm; sourceTree = "<group>"; };
+		822C6D4217FCDB31008C04BA /* THPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPacket.h; sourceTree = "<group>"; };
+		822C6D4317FCDB31008C04BA /* THPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPacket.m; sourceTree = "<group>"; };
+		8231EBC31836BD3600BC41C1 /* NSString+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HexString.h"; sourceTree = "<group>"; };
+		8231EBC41836BD3600BC41C1 /* NSString+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexString.m"; sourceTree = "<group>"; };
+		8231EC081836C60D00BC41C1 /* Telehash Playground.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Telehash Playground.xcodeproj"; path = "Telehash Playground/Telehash Playground.xcodeproj"; sourceTree = "<group>"; };
+		8231EC191836F37F00BC41C1 /* THLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLine.h; sourceTree = "<group>"; };
+		8231EC1A1836F37F00BC41C1 /* THLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLine.m; sourceTree = "<group>"; };
+		8236E1A518F5EDB600169201 /* THTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTransport.h; sourceTree = "<group>"; };
+		8236E1A618F5EDB600169201 /* THTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTransport.m; sourceTree = "<group>"; };
+		8249D63E1905F6640009F03B /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = libsodium/build/lib/libsodium.a; sourceTree = "<group>"; };
+		8249D6401905F6730009F03B /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = "libsodium/build-ios/lib/libsodium.a"; sourceTree = "<group>"; };
+		8249D6421906100C0009F03B /* THCipherSet3a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCipherSet3a.h; sourceTree = "<group>"; };
+		8249D6431906100C0009F03B /* THCipherSet3a.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCipherSet3a.m; sourceTree = "<group>"; };
+		8249D647190627300009F03B /* THCipherSet2a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCipherSet2a.h; sourceTree = "<group>"; };
+		8249D648190627300009F03B /* THCipherSet2a.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCipherSet2a.m; sourceTree = "<group>"; };
+		824F74B1191061D300B4E807 /* CLCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCLog.h; sourceTree = "<group>"; };
+		824F74B2191061D300B4E807 /* CLCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCLog.m; sourceTree = "<group>"; };
+		8251ADB918C023DC005CB9E2 /* open.pkt */ = {isa = PBXFileReference; lastKnownFileType = file; path = open.pkt; sourceTree = "<group>"; };
+		8251ADBB18C05A26005CB9E2 /* THCipherSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCipherSet.h; sourceTree = "<group>"; };
+		8251ADBC18C05A26005CB9E2 /* THCipherSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCipherSet.m; sourceTree = "<group>"; };
+		827CB8A9190C887F001EB8F9 /* THUnreliableChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THUnreliableChannel.h; sourceTree = "<group>"; };
+		827CB8AA190C887F001EB8F9 /* THUnreliableChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THUnreliableChannel.m; sourceTree = "<group>"; };
+		827CB8B2190C8890001EB8F9 /* THReliableChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THReliableChannel.h; sourceTree = "<group>"; };
+		827CB8B3190C8890001EB8F9 /* THReliableChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THReliableChannel.m; sourceTree = "<group>"; };
+		8298FF4718C5B5B0009CD379 /* GCMAES256.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GCMAES256.mm; sourceTree = "<group>"; };
+		8298FF4818C5B5B0009CD379 /* GCMAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMAES256.h; sourceTree = "<group>"; };
+		8298FF5C18C83ECB009CD379 /* server.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.der; sourceTree = "<group>"; };
+		8298FF5D18C83ECB009CD379 /* server.pder */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.pder; sourceTree = "<group>"; };
+		82A31BA1183457EB005077AD /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		82A31BA2183457EB005077AD /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
+		82B1720217FDE18F00C29EAF /* test.pkt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = test.pkt; sourceTree = "<group>"; };
+		82B1720417FDE90600C29EAF /* THSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSwitch.h; sourceTree = "<group>"; };
+		82B1720517FDE90600C29EAF /* THSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSwitch.m; sourceTree = "<group>"; };
+		82B17209180095B100C29EAF /* THChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THChannel.h; sourceTree = "<group>"; };
+		82B1720A180095B100C29EAF /* THChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THChannel.m; sourceTree = "<group>"; };
+		82B1720E18009A6C00C29EAF /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		82B1720F18009A6C00C29EAF /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		82B172131800A51B00C29EAF /* THIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THIdentity.h; sourceTree = "<group>"; };
+		82B172141800A51B00C29EAF /* THIdentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THIdentity.m; sourceTree = "<group>"; };
+		82B70ACC18404D4900E819F3 /* THPacketBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPacketBuffer.h; sourceTree = "<group>"; };
+		82B70ACD18404D4900E819F3 /* THPacketBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPacketBuffer.m; sourceTree = "<group>"; };
+		82D221361871D3630015E7EA /* cryptopp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cryptopp.xcodeproj; path = cryptopp/cryptopp/cryptopp.xcodeproj; sourceTree = "<group>"; };
+		82DB2369187C8343002C74C9 /* THMeshBuckets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMeshBuckets.h; sourceTree = "<group>"; };
+		82DB236A187C8343002C74C9 /* THMeshBuckets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMeshBuckets.m; sourceTree = "<group>"; };
+		82DB2373187C83E4002C74C9 /* THPendingJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPendingJob.h; sourceTree = "<group>"; };
+		82DB2374187C83E4002C74C9 /* THPendingJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPendingJob.m; sourceTree = "<group>"; };
+		82EF372F1927AF3D001D3DB4 /* THRelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRelay.h; sourceTree = "<group>"; };
+		82EF37301927AF3D001D3DB4 /* THRelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRelay.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8218D16A17FA6E8A0053AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8249D63F1905F6640009F03B /* libsodium.a in Frameworks */,
+				8218D17117FA6E8A0053AFAC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D17D17FA6E8B0053AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8251ADB418C02349005CB9E2 /* libcryptopp-osx.a in Frameworks */,
+				821874161836957400256DA3 /* libc++.dylib in Frameworks */,
+				8218D18617FA6E8B0053AFAC /* libtelehash.a in Frameworks */,
+				8218D18317FA6E8B0053AFAC /* Cocoa.framework in Frameworks */,
+				8218D18217FA6E8B0053AFAC /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D19817FA6EA50053AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8249D6411905F6730009F03B /* libsodium.a in Frameworks */,
+				8218D19D17FA6EA50053AFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D1A617FA6EA60053AFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D1AA17FA6EA60053AFAC /* XCTest.framework in Frameworks */,
+				8218D1B017FA6EA60053AFAC /* libtelehash-ios.a in Frameworks */,
+				8218D1AD17FA6EA60053AFAC /* UIKit.framework in Frameworks */,
+				8218D1AB17FA6EA60053AFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8207A0B918562A5E009EF845 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8207A0C018562A5F009EF845 /* thFieldTest.app */,
+				8207A0C218562A5F009EF845 /* thFieldTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8218D16417FA6E8A0053AFAC = {
+			isa = PBXGroup;
+			children = (
+				82D221361871D3630015E7EA /* cryptopp.xcodeproj */,
+				8207A0B818562A5E009EF845 /* thFieldTest.xcodeproj */,
+				8231EC081836C60D00BC41C1 /* Telehash Playground.xcodeproj */,
+				822C6D4117FCDAA5008C04BA /* common */,
+				8218D1BF17FA6EF50053AFAC /* cryptopp */,
+				8218D17617FA6E8A0053AFAC /* telehash */,
+				8218D18717FA6E8B0053AFAC /* telehashTests */,
+				8218D19E17FA6EA50053AFAC /* telehash-ios */,
+				8218D1B117FA6EA60053AFAC /* telehash-iosTests */,
+				8218D16F17FA6E8A0053AFAC /* Frameworks */,
+				8218D16E17FA6E8A0053AFAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8218D16E17FA6E8A0053AFAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8218D16D17FA6E8A0053AFAC /* libtelehash.a */,
+				8218D18017FA6E8B0053AFAC /* telehashTests.xctest */,
+				8218D19B17FA6EA50053AFAC /* libtelehash-ios.a */,
+				8218D1A917FA6EA60053AFAC /* telehash-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8218D16F17FA6E8A0053AFAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8249D6401905F6730009F03B /* libsodium.a */,
+				8249D63E1905F6640009F03B /* libsodium.a */,
+				821874151836957400256DA3 /* libc++.dylib */,
+				8218D17017FA6E8A0053AFAC /* Cocoa.framework */,
+				8218D18117FA6E8B0053AFAC /* XCTest.framework */,
+				8218D19C17FA6EA50053AFAC /* Foundation.framework */,
+				8218D1AC17FA6EA60053AFAC /* UIKit.framework */,
+				8218D17217FA6E8A0053AFAC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8218D17217FA6E8A0053AFAC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8218D17317FA6E8A0053AFAC /* Foundation.framework */,
+				8218D17417FA6E8A0053AFAC /* CoreData.framework */,
+				8218D17517FA6E8A0053AFAC /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8218D17617FA6E8A0053AFAC /* telehash */ = {
+			isa = PBXGroup;
+			children = (
+				8218D17917FA6E8A0053AFAC /* telehash.h */,
+				8218D17A17FA6E8A0053AFAC /* telehash.m */,
+				8218D17717FA6E8A0053AFAC /* Supporting Files */,
+			);
+			path = telehash;
+			sourceTree = "<group>";
+		};
+		8218D17717FA6E8A0053AFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8218D17817FA6E8A0053AFAC /* telehash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8218D18717FA6E8B0053AFAC /* telehashTests */ = {
+			isa = PBXGroup;
+			children = (
+				8218D18D17FA6E8B0053AFAC /* telehashTests.m */,
+				8218D18817FA6E8B0053AFAC /* Supporting Files */,
+			);
+			path = telehashTests;
+			sourceTree = "<group>";
+		};
+		8218D18817FA6E8B0053AFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8298FF5C18C83ECB009CD379 /* server.der */,
+				8298FF5D18C83ECB009CD379 /* server.pder */,
+				8251ADB918C023DC005CB9E2 /* open.pkt */,
+				8218D18917FA6E8B0053AFAC /* telehashTests-Info.plist */,
+				8218D18A17FA6E8B0053AFAC /* InfoPlist.strings */,
+				82B1720217FDE18F00C29EAF /* test.pkt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8218D19E17FA6EA50053AFAC /* telehash-ios */ = {
+			isa = PBXGroup;
+			children = (
+				8218D1A117FA6EA50053AFAC /* telehash_ios.h */,
+				8218D1A317FA6EA50053AFAC /* telehash_ios.m */,
+				8218D19F17FA6EA50053AFAC /* Supporting Files */,
+			);
+			path = "telehash-ios";
+			sourceTree = "<group>";
+		};
+		8218D19F17FA6EA50053AFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8218D1A017FA6EA50053AFAC /* telehash-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8218D1B117FA6EA60053AFAC /* telehash-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				8218D1B717FA6EA60053AFAC /* telehash_iosTests.m */,
+				8218D1B217FA6EA60053AFAC /* Supporting Files */,
+			);
+			path = "telehash-iosTests";
+			sourceTree = "<group>";
+		};
+		8218D1B217FA6EA60053AFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8218D1B317FA6EA60053AFAC /* telehash-iosTests-Info.plist */,
+				8218D1B417FA6EA60053AFAC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8218D1BF17FA6EF50053AFAC /* cryptopp */ = {
+			isa = PBXGroup;
+			children = (
+				8298FF4718C5B5B0009CD379 /* GCMAES256.mm */,
+				8298FF4818C5B5B0009CD379 /* GCMAES256.h */,
+				8218D1C017FA6F410053AFAC /* THRSA.h */,
+				8218D1C117FA6F410053AFAC /* RSA.mm */,
+				822C6D2D17FCCD0C008C04BA /* ECDH.h */,
+				822C6D2E17FCCD0C008C04BA /* ECDH.mm */,
+				822C6D3217FCD3F6008C04BA /* CTRAES256.h */,
+				822C6D3317FCD3F6008C04BA /* CTRAES256.mm */,
+				822C6D3717FCD754008C04BA /* SHA256.h */,
+				822C6D3817FCD754008C04BA /* SHA256.mm */,
+				822C6D3C17FCD8C5008C04BA /* RNG.h */,
+				822C6D3D17FCD8C5008C04BA /* RNG.mm */,
+			);
+			name = cryptopp;
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		822C6D4117FCDAA5008C04BA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				824F74B1191061D300B4E807 /* CLCLog.h */,
+				824F74B2191061D300B4E807 /* CLCLog.m */,
+				82B1720E18009A6C00C29EAF /* GCDAsyncUdpSocket.h */,
+				82B1720F18009A6C00C29EAF /* GCDAsyncUdpSocket.m */,
+				82B1720417FDE90600C29EAF /* THSwitch.h */,
+				82B1720517FDE90600C29EAF /* THSwitch.m */,
+				82DB2369187C8343002C74C9 /* THMeshBuckets.h */,
+				82DB236A187C8343002C74C9 /* THMeshBuckets.m */,
+				82B172131800A51B00C29EAF /* THIdentity.h */,
+				82B172141800A51B00C29EAF /* THIdentity.m */,
+				820BADFA18D81476003D7CBA /* THPath.h */,
+				820BADFB18D81476003D7CBA /* THPath.m */,
+				8236E1A518F5EDB600169201 /* THTransport.h */,
+				8236E1A618F5EDB600169201 /* THTransport.m */,
+				8231EC191836F37F00BC41C1 /* THLine.h */,
+				8231EC1A1836F37F00BC41C1 /* THLine.m */,
+				82EF372F1927AF3D001D3DB4 /* THRelay.h */,
+				82EF37301927AF3D001D3DB4 /* THRelay.m */,
+				820BADF118D77EFA003D7CBA /* THPeerRelay.h */,
+				820BADF218D77EFA003D7CBA /* THPeerRelay.m */,
+				82B17209180095B100C29EAF /* THChannel.h */,
+				82B1720A180095B100C29EAF /* THChannel.m */,
+				827CB8A9190C887F001EB8F9 /* THUnreliableChannel.h */,
+				827CB8AA190C887F001EB8F9 /* THUnreliableChannel.m */,
+				827CB8B2190C8890001EB8F9 /* THReliableChannel.h */,
+				827CB8B3190C8890001EB8F9 /* THReliableChannel.m */,
+				822C6D4217FCDB31008C04BA /* THPacket.h */,
+				822C6D4317FCDB31008C04BA /* THPacket.m */,
+				82B70ACC18404D4900E819F3 /* THPacketBuffer.h */,
+				82B70ACD18404D4900E819F3 /* THPacketBuffer.m */,
+				82DB2373187C83E4002C74C9 /* THPendingJob.h */,
+				82DB2374187C83E4002C74C9 /* THPendingJob.m */,
+				8251ADBB18C05A26005CB9E2 /* THCipherSet.h */,
+				8251ADBC18C05A26005CB9E2 /* THCipherSet.m */,
+				8249D6421906100C0009F03B /* THCipherSet3a.h */,
+				8249D6431906100C0009F03B /* THCipherSet3a.m */,
+				8249D647190627300009F03B /* THCipherSet2a.h */,
+				8249D648190627300009F03B /* THCipherSet2a.m */,
+				82A31BA1183457EB005077AD /* NSData+HexString.h */,
+				82A31BA2183457EB005077AD /* NSData+HexString.m */,
+				8231EBC31836BD3600BC41C1 /* NSString+HexString.h */,
+				8231EBC41836BD3600BC41C1 /* NSString+HexString.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8231EC091836C60D00BC41C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8231EC0E1836C60E00BC41C1 /* Telehash Playground.app */,
+				8231EC101836C60E00BC41C1 /* Telehash PlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82D221371871D3630015E7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82D2213C1871D3630015E7EA /* libcryptopp-ios.a */,
+				8263D95B18BD16F000DED8E5 /* libcryptopp-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8218D16B17FA6E8A0053AFAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8251ADBD18C05A26005CB9E2 /* THCipherSet.h in Headers */,
+				82DB2375187C83E4002C74C9 /* THPendingJob.h in Headers */,
+				820BADF318D77EFA003D7CBA /* THPeerRelay.h in Headers */,
+				8236E1A718F5EDB600169201 /* THTransport.h in Headers */,
+				82B70ACE18404D4900E819F3 /* THPacketBuffer.h in Headers */,
+				82DB236B187C8343002C74C9 /* THMeshBuckets.h in Headers */,
+				822C6D2F17FCCD0C008C04BA /* ECDH.h in Headers */,
+				8218D1C217FA6F410053AFAC /* THRSA.h in Headers */,
+				822C6D3417FCD3F6008C04BA /* CTRAES256.h in Headers */,
+				8249D649190627300009F03B /* THCipherSet2a.h in Headers */,
+				822C6D3E17FCD8C5008C04BA /* RNG.h in Headers */,
+				82B1721018009A6C00C29EAF /* GCDAsyncUdpSocket.h in Headers */,
+				8231EC1B1836F37F00BC41C1 /* THLine.h in Headers */,
+				8298FF4A18C5B5B0009CD379 /* GCMAES256.h in Headers */,
+				824F74B3191061D300B4E807 /* CLCLog.h in Headers */,
+				822C6D4417FCDB31008C04BA /* THPacket.h in Headers */,
+				822C6D3917FCD754008C04BA /* SHA256.h in Headers */,
+				82B1720B180095B100C29EAF /* THChannel.h in Headers */,
+				8249D6441906100C0009F03B /* THCipherSet3a.h in Headers */,
+				827CB8B4190C8890001EB8F9 /* THReliableChannel.h in Headers */,
+				82B172151800A51B00C29EAF /* THIdentity.h in Headers */,
+				827CB8AB190C887F001EB8F9 /* THUnreliableChannel.h in Headers */,
+				82EF37311927AF3D001D3DB4 /* THRelay.h in Headers */,
+				8231EBC51836BD3600BC41C1 /* NSString+HexString.h in Headers */,
+				82A31BA3183457EB005077AD /* NSData+HexString.h in Headers */,
+				82B1720617FDE90600C29EAF /* THSwitch.h in Headers */,
+				820BADFC18D81476003D7CBA /* THPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8218D16C17FA6E8A0053AFAC /* telehash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8218D19117FA6E8B0053AFAC /* Build configuration list for PBXNativeTarget "telehash" */;
+			buildPhases = (
+				8218D16917FA6E8A0053AFAC /* Sources */,
+				8218D16A17FA6E8A0053AFAC /* Frameworks */,
+				8218D16B17FA6E8A0053AFAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8263D96518BD274C00DED8E5 /* PBXTargetDependency */,
+			);
+			name = telehash;
+			productName = telehash;
+			productReference = 8218D16D17FA6E8A0053AFAC /* libtelehash.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8218D17F17FA6E8B0053AFAC /* telehashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8218D19417FA6E8B0053AFAC /* Build configuration list for PBXNativeTarget "telehashTests" */;
+			buildPhases = (
+				8218D17C17FA6E8B0053AFAC /* Sources */,
+				8218D17D17FA6E8B0053AFAC /* Frameworks */,
+				8218D17E17FA6E8B0053AFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8218D18517FA6E8B0053AFAC /* PBXTargetDependency */,
+			);
+			name = telehashTests;
+			productName = telehashTests;
+			productReference = 8218D18017FA6E8B0053AFAC /* telehashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8218D19A17FA6EA50053AFAC /* telehash-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8218D1B917FA6EA60053AFAC /* Build configuration list for PBXNativeTarget "telehash-ios" */;
+			buildPhases = (
+				8218D19717FA6EA50053AFAC /* Sources */,
+				8218D19817FA6EA50053AFAC /* Frameworks */,
+				8218D19917FA6EA50053AFAC /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8263D96718BD275000DED8E5 /* PBXTargetDependency */,
+			);
+			name = "telehash-ios";
+			productName = "telehash-ios";
+			productReference = 8218D19B17FA6EA50053AFAC /* libtelehash-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8218D1A817FA6EA60053AFAC /* telehash-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8218D1BC17FA6EA60053AFAC /* Build configuration list for PBXNativeTarget "telehash-iosTests" */;
+			buildPhases = (
+				8218D1A517FA6EA60053AFAC /* Sources */,
+				8218D1A617FA6EA60053AFAC /* Frameworks */,
+				8218D1A717FA6EA60053AFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8218D1AF17FA6EA60053AFAC /* PBXTargetDependency */,
+			);
+			name = "telehash-iosTests";
+			productName = "telehash-iosTests";
+			productReference = 8218D1A917FA6EA60053AFAC /* telehash-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8218D16517FA6E8A0053AFAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Telehash Foundation";
+				TargetAttributes = {
+					8218D17F17FA6E8B0053AFAC = {
+						TestTargetID = 8218D19A17FA6EA50053AFAC;
+					};
+				};
+			};
+			buildConfigurationList = 8218D16817FA6E8A0053AFAC /* Build configuration list for PBXProject "telehash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8218D16417FA6E8A0053AFAC;
+			productRefGroup = 8218D16E17FA6E8A0053AFAC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 82D221371871D3630015E7EA /* Products */;
+					ProjectRef = 82D221361871D3630015E7EA /* cryptopp.xcodeproj */;
+				},
+				{
+					ProductGroup = 8231EC091836C60D00BC41C1 /* Products */;
+					ProjectRef = 8231EC081836C60D00BC41C1 /* Telehash Playground.xcodeproj */;
+				},
+				{
+					ProductGroup = 8207A0B918562A5E009EF845 /* Products */;
+					ProjectRef = 8207A0B818562A5E009EF845 /* thFieldTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8218D16C17FA6E8A0053AFAC /* telehash */,
+				8218D17F17FA6E8B0053AFAC /* telehashTests */,
+				8218D19A17FA6EA50053AFAC /* telehash-ios */,
+				8218D1A817FA6EA60053AFAC /* telehash-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8207A0C018562A5F009EF845 /* thFieldTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = thFieldTest.app;
+			remoteRef = 8207A0BF18562A5F009EF845 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8207A0C218562A5F009EF845 /* thFieldTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = thFieldTestTests.xctest;
+			remoteRef = 8207A0C118562A5F009EF845 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8231EC0E1836C60E00BC41C1 /* Telehash Playground.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Telehash Playground.app";
+			remoteRef = 8231EC0D1836C60E00BC41C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8231EC101836C60E00BC41C1 /* Telehash PlaygroundTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Telehash PlaygroundTests.xctest";
+			remoteRef = 8231EC0F1836C60E00BC41C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8263D95B18BD16F000DED8E5 /* libcryptopp-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcryptopp-osx.a";
+			remoteRef = 8263D95A18BD16F000DED8E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		82D2213C1871D3630015E7EA /* libcryptopp-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcryptopp-ios.a";
+			remoteRef = 82D2213B1871D3630015E7EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8218D17E17FA6E8B0053AFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8298FF5F18C83ECC009CD379 /* server.pder in Resources */,
+				8218D18C17FA6E8B0053AFAC /* InfoPlist.strings in Resources */,
+				8251ADBA18C023DC005CB9E2 /* open.pkt in Resources */,
+				8298FF5E18C83ECB009CD379 /* server.der in Resources */,
+				82B1720317FDE18F00C29EAF /* test.pkt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D1A717FA6EA60053AFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D1B617FA6EA60053AFAC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8218D16917FA6E8A0053AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D1C317FA6F410053AFAC /* RSA.mm in Sources */,
+				820BADF418D77EFA003D7CBA /* THPeerRelay.m in Sources */,
+				822C6D4517FCDB31008C04BA /* THPacket.m in Sources */,
+				822C6D3A17FCD754008C04BA /* SHA256.mm in Sources */,
+				8251ADBE18C05A26005CB9E2 /* THCipherSet.m in Sources */,
+				8231EC1C1836F37F00BC41C1 /* THLine.m in Sources */,
+				82DB236C187C8343002C74C9 /* THMeshBuckets.m in Sources */,
+				827CB8AC190C8880001EB8F9 /* THUnreliableChannel.m in Sources */,
+				82B1720717FDE90600C29EAF /* THSwitch.m in Sources */,
+				8249D64A190627300009F03B /* THCipherSet2a.m in Sources */,
+				822C6D3517FCD3F6008C04BA /* CTRAES256.mm in Sources */,
+				8249D6451906100C0009F03B /* THCipherSet3a.m in Sources */,
+				8236E1A818F5EDB600169201 /* THTransport.m in Sources */,
+				82EF37321927AF3D001D3DB4 /* THRelay.m in Sources */,
+				82DB2376187C83E4002C74C9 /* THPendingJob.m in Sources */,
+				8231EBC61836BD3600BC41C1 /* NSString+HexString.m in Sources */,
+				820BADFD18D81476003D7CBA /* THPath.m in Sources */,
+				82B1720C180095B100C29EAF /* THChannel.m in Sources */,
+				82B70ACF18404D4900E819F3 /* THPacketBuffer.m in Sources */,
+				82B1721118009A6C00C29EAF /* GCDAsyncUdpSocket.m in Sources */,
+				827CB8B5190C8890001EB8F9 /* THReliableChannel.m in Sources */,
+				82A31BA4183457EB005077AD /* NSData+HexString.m in Sources */,
+				822C6D3F17FCD8C5008C04BA /* RNG.mm in Sources */,
+				824F74B4191061D300B4E807 /* CLCLog.m in Sources */,
+				822C6D3017FCCD0C008C04BA /* ECDH.mm in Sources */,
+				8218D17B17FA6E8A0053AFAC /* telehash.m in Sources */,
+				82B172161800A51B00C29EAF /* THIdentity.m in Sources */,
+				8298FF4918C5B5B0009CD379 /* GCMAES256.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D17C17FA6E8B0053AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D18E17FA6E8B0053AFAC /* telehashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D19717FA6EA50053AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D1C417FA6F410053AFAC /* RSA.mm in Sources */,
+				820BADF518D77EFA003D7CBA /* THPeerRelay.m in Sources */,
+				822C6D4617FCDB31008C04BA /* THPacket.m in Sources */,
+				822C6D3B17FCD754008C04BA /* SHA256.mm in Sources */,
+				8251ADBF18C05A26005CB9E2 /* THCipherSet.m in Sources */,
+				8231EC1D1836F37F00BC41C1 /* THLine.m in Sources */,
+				82DB236D187C8343002C74C9 /* THMeshBuckets.m in Sources */,
+				827CB8AD190C8880001EB8F9 /* THUnreliableChannel.m in Sources */,
+				82B1720817FDE90600C29EAF /* THSwitch.m in Sources */,
+				8249D64B190627300009F03B /* THCipherSet2a.m in Sources */,
+				822C6D3617FCD3F6008C04BA /* CTRAES256.mm in Sources */,
+				8249D6461906100C0009F03B /* THCipherSet3a.m in Sources */,
+				8236E1A918F5EDB600169201 /* THTransport.m in Sources */,
+				82EF37331927AF3D001D3DB4 /* THRelay.m in Sources */,
+				82DB2377187C83E4002C74C9 /* THPendingJob.m in Sources */,
+				8231EBC71836BD3600BC41C1 /* NSString+HexString.m in Sources */,
+				820BADFE18D81476003D7CBA /* THPath.m in Sources */,
+				82B1720D180095B100C29EAF /* THChannel.m in Sources */,
+				82B70AD018404D4900E819F3 /* THPacketBuffer.m in Sources */,
+				82B1721218009A6C00C29EAF /* GCDAsyncUdpSocket.m in Sources */,
+				827CB8B6190C8890001EB8F9 /* THReliableChannel.m in Sources */,
+				82A31BA5183457EB005077AD /* NSData+HexString.m in Sources */,
+				822C6D4017FCD8C5008C04BA /* RNG.mm in Sources */,
+				824F74B5191061D300B4E807 /* CLCLog.m in Sources */,
+				822C6D3117FCCD0C008C04BA /* ECDH.mm in Sources */,
+				8218D1A417FA6EA50053AFAC /* telehash_ios.m in Sources */,
+				82B172171800A51B00C29EAF /* THIdentity.m in Sources */,
+				8298FF4F18C5B5B4009CD379 /* GCMAES256.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8218D1A517FA6EA60053AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8218D1B817FA6EA60053AFAC /* telehash_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8218D18517FA6E8B0053AFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8218D16C17FA6E8A0053AFAC /* telehash */;
+			targetProxy = 8218D18417FA6E8B0053AFAC /* PBXContainerItemProxy */;
+		};
+		8218D1AF17FA6EA60053AFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8218D19A17FA6EA50053AFAC /* telehash-ios */;
+			targetProxy = 8218D1AE17FA6EA60053AFAC /* PBXContainerItemProxy */;
+		};
+		8263D96518BD274C00DED8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cryptopp-osx";
+			targetProxy = 8263D96418BD274C00DED8E5 /* PBXContainerItemProxy */;
+		};
+		8263D96718BD275000DED8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cryptopp-ios";
+			targetProxy = 8263D96618BD275000DED8E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8218D18A17FA6E8B0053AFAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8218D18B17FA6E8B0053AFAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8218D1B417FA6EA60053AFAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8218D1B517FA6EA60053AFAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8218D18F17FA6E8B0053AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"CLCDEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8218D19017FA6E8B0053AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8218D19217FA6E8B0053AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash/telehash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"CRYPTOPP_DISABLE_ASM=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cryptopp",
+					"$(PROJECT_DIR)/libsodium/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/libsodium/build/lib";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8218D19317FA6E8B0053AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash/telehash-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cryptopp",
+					"$(PROJECT_DIR)/libsodium/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/libsodium/build/lib";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8218D19517FA6E8B0053AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash/telehash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "telehashTests/telehashTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8218D19617FA6E8B0053AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash/telehash-Prefix.pch";
+				INFOPLIST_FILE = "telehashTests/telehashTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		8218D1BA17FA6EA60053AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/telehash_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash-ios/telehash-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"CRYPTOPP_DISABLE_ASM=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/cryptopp",
+					"$(PROJECT_DIR)/libsodium/build-ios/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libsodium/build-ios/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8218D1BB17FA6EA60053AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = /tmp/telehash_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash-ios/telehash-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/cryptopp",
+					"$(PROJECT_DIR)/libsodium/build-ios/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libsodium/build-ios/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8218D1BD17FA6EA60053AFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash-ios/telehash-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "telehash-iosTests/telehash-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8218D1BE17FA6EA60053AFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "telehash-ios/telehash-ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "telehash-iosTests/telehash-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8218D16817FA6E8A0053AFAC /* Build configuration list for PBXProject "telehash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8218D18F17FA6E8B0053AFAC /* Debug */,
+				8218D19017FA6E8B0053AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8218D19117FA6E8B0053AFAC /* Build configuration list for PBXNativeTarget "telehash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8218D19217FA6E8B0053AFAC /* Debug */,
+				8218D19317FA6E8B0053AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8218D19417FA6E8B0053AFAC /* Build configuration list for PBXNativeTarget "telehashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8218D19517FA6E8B0053AFAC /* Debug */,
+				8218D19617FA6E8B0053AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8218D1B917FA6EA60053AFAC /* Build configuration list for PBXNativeTarget "telehash-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8218D1BA17FA6EA60053AFAC /* Debug */,
+				8218D1BB17FA6EA60053AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8218D1BC17FA6EA60053AFAC /* Build configuration list for PBXNativeTarget "telehash-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8218D1BD17FA6EA60053AFAC /* Debug */,
+				8218D1BE17FA6EA60053AFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8218D16517FA6E8A0053AFAC /* Project object */;
+}
